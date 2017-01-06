@@ -9,11 +9,7 @@
 
 body {
     width: 90%;
-    margin: 2%;
-}
-
-.clear {
-    clear: both;
+    margin: auto;
 }
 
 /*************************************
@@ -24,7 +20,7 @@ header {
     width: 100%;
     background-color: #FFB4B0;
     border: 3px solid black;
-    margin: 2% auto ;
+    margin: 2% -1% 2% 0;
 }
 
 nav li {
@@ -44,6 +40,44 @@ nav a:visited {
 }
 
 /*************************************
+ Column Height
+*************************************/
+
+/*.container {
+    padding-right: 330px;
+    overflow: hidden;
+}
+
+#selector {
+  float: left;
+  width: 100%;
+}
+
+#selections {
+  float: right;
+  margin-right: -330px;
+  width: 300px;
+}
+
+#selector,
+#selections {
+  padding-bottom: 100px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}*/
+
+/*************************************
  Selector Form
 *************************************/
 
@@ -54,7 +88,9 @@ nav a:visited {
     background-color: #4DD7FA;
     border: 3px solid black;
     margin-right: 2%;
+    margin-bottom: 2%;
     padding: 2%;
+    height: 411px;
 }
 
 .full-width {
@@ -81,7 +117,7 @@ nav a:visited {
 }
 
 /*************************************
- Customized Song Lenght Slider
+ Customized Song Length Slider
 *************************************/
 
 /***************** Hiding the default slider ***************/
