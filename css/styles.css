@@ -90,7 +90,7 @@ nav a:visited {
     margin-right: 2%;
     margin-bottom: 2%;
     padding: 2%;
-    height: 411px;
+    height: 762px;
 }
 
 .full-width {
@@ -203,7 +203,7 @@ input[type=range]::-moz-range-track {
 #selections p {
     display: inline-block;
     border-right: 2px solid black;
-    padding-right: 1%;
+    padding: 0 1%;
     margin: -1em 0;
 }
 
