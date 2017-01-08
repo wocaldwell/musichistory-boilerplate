@@ -1,13 +1,82 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <title>Music History</title>
 </head>
-
 <body>
-
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">View Music</a></li>
+                <li><a href="add.html">Add Music</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container clearfix">
+        <form id="selector">
+            <label for="song-length">Song Length:</label><br>
+            <div class="centered-input" class="padded"><input type="range" name="song-length" /></div><br>
+            <div class="padded">
+                <label for="artists">Artist:</label><br>
+                <select class="full-width" name="artists">
+                    <option value="pinback">Pinback</option>
+                    <option value="drdog">Dr. Dog</option>
+                    <option value="midlake">Midlake</option>
+                    <option value="damienjurado">Damien Jurado</option>
+                    <option value="bobdylan">Bob Dylan</option>
+                </select>
+            </div><br>
+            <div class="padded">
+                <label for="albums">Album:</label><br>
+                <select class="full-width" name="albums">
+                    <option value="proceed">Proceed to Memory</option>
+                    <option value="b-room">B-Room</option>
+                    <option value="roscoe">Roscoe</option>
+                    <option value="visions">Visions of Us on the Land</option>
+                    <option value="newmorning">New Morning</option>
+                </select>
+            </div><br>
+            <ul id="genre-check">
+                <li><label for="genre-check">Genre:</label></li><br>
+                <li><input type="checkbox" name="genre" value="rock" />Rock</li>
+                <li><input type="checkbox" name="genre" value="Classical">Classical</li><br>
+                <li><input type="checkbox" name="genre" value="pop" />Pop</li>
+                <li><input type="checkbox" name="genre" value="jazz" />Jazz</li><br>
+                <li><input type="checkbox" name="genre" value="blues",/>Blues</li>
+                <li><input type="checkbox" name="genre" value="hiphop" />Hip hop</li>
+            </ul><br>
+            <div class="centered-input"><input type="submit" value="Filter" /></div>
+        </form>
+        <section id="selections">
+            <div class="song">
+                <h2>Song Name</h2>
+                <p>Artist Name</p>
+                <p>Album Name</p>
+                <p>Genre</p>
+            </div>
+            <div class="song">
+                <h2>Song Name</h2>
+                <p>Artist Name</p>
+                <p>Album Name</p>
+                <p>Genre</p>
+            </div>
+            <div class="song">
+                <h2>Song Name</h2>
+                <p>Artist Name</p>
+                <p>Album Name</p>
+                <p>Genre</p>
+            </div>
+            <div class="song">
+                <h2>Song Name</h2>
+                <p>Artist Name</p>
+                <p>Album Name</p>
+                <p>Genre</p>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
