@@ -10,13 +10,22 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html" style="text-decoration:none;">View Music</a></li>
+                <li><a href="index.html" style="text-decoration:none;">List Music</a></li>
                 <li><a href="add.html" style="text-decoration:none;">Add Music</a></li>
                 <li><a href="profile.html" style="text-decoration:none;">Profile</a></li>
             </ul>
         </nav>
     </header>
-    <div class="container clearfix">
+    <div id="addMusicView">
+        <label for="addSongName">Song:</label>
+        <input type="text" id="addSongName" />
+        <label for="addArtistName">Artist:</label>
+        <input type="text" id="addArtistName" />
+        <label for="addAlbumName">Album:</label>
+        <input type="text" id="addSongName" />
+        <button type="button">Add</button>
+    </div>
+    <div id="listMusicView" class="container clearfix">
         <form id="selector">
             <label for="song-length">Song Length:</label><br>
             <div class="centered-input" class="padded"><input type="range" name="song-length" /></div><br>
