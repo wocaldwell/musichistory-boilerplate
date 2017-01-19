@@ -71,16 +71,20 @@ for (var i = 0; i < songs.length; i++) {
 songs = editedSongs;
 var mainContent = document.getElementById("selections");
 
-for (var i = 0; i < songs.length; i++) {
-    var currentSong = songs[i];
-    var firstSplit = currentSong.split(" - by ");
-    var songName = firstSplit[0];
-    var firstRemainder = firstSplit[1];
-    var secondSplit = firstRemainder.split(" on the album ");
-    var artist = secondSplit[0];
-    var album = secondSplit[1];
-    mainContent.innerHTML = mainContent.innerHTML + "<div class='song'><h2>" + songName + "</h2><p>" + artist + "</p><p>" + album + "</p><p>Genre</p></div>";
+function addAllSongs() {
+    for (var i = 0; i < songs.length; i++) {
+        var currentSong = songs[i];
+        var firstSplit = currentSong.split(" - by ");
+        var songName = firstSplit[0];
+        var firstRemainder = firstSplit[1];
+        var secondSplit = firstRemainder.split(" on the album ");
+        var artist = secondSplit[0];
+        var album = secondSplit[1];
+        mainContent.innerHTML = mainContent.innerHTML + "<div class='song'><h2>" + songName + "</h2><p>" + artist + "</p><p>" + album + "</p><p>Genre</p></div>";
+    }
 }
+
+addAllSongs();
 
 
 // Hide and show divs based on click
@@ -98,7 +102,18 @@ function showAdd() {
 }
 
 
+// Once the user fills out the song form and clicks the add button, you should collect all values from the input fields, add the song to your array of songs
+var addButton = document.getElementById("addButton");
+addButton.addEventListener('click', addSongToSongs);
 
+function addSongToSongs() {
+    var song = document.getElementById("addSongName").value;
+    var artist = document.getElementById("addArtistName").value;
+    var album =document.getElementById("addAlbumName").value;
+    var songToAdd = song + " - by " + artist + " on the album " + album;
+    songs.push(songToAdd);
+    console.log(songs);
+}
 
 
 

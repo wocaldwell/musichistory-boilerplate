@@ -224,9 +224,29 @@ input[type=range]::-moz-range-track {
  Add Music View
 *************************************/
 
-#addMusicView {  /* Default on page load */
-  display: none;
+#addMusicView {
+  display: none;  /* Default on page load */
+  /*text-align: center;*/
+  width: 30%;
+  margin: auto;
 }
+
+#addMusicView label,
+input, button {
+}
+
+#addMusicView label {
+  float: left;
+}
+
+#addMusicView input {
+  float: right;
+}
+
+#addMusicView button {
+  clear: both;
+}
+
 
 
 
