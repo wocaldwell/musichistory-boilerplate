@@ -220,8 +220,13 @@ input[type=range]::-moz-range-track {
     margin: 0;
 }
 
+/*************************************
+ Add Music View
+*************************************/
 
-
+#addMusicView {  /* Default on page load */
+  display: none;
+}
 
 
 

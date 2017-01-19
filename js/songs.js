@@ -11,7 +11,7 @@ var songs = [
 function addSomeSongs() {
     songs.unshift("AFK > by Pinback on the album Summer in Abaddon");
     songs.push("Lonesome > by Dr. Dog on the album Be the Void");
-    console.log(songs);
+    // console.log(songs);
     return songs;
 }
 
@@ -52,7 +52,7 @@ for (var i = 0; i < songs.length; i++) {
     }
     editedSongs.push(charsOnlySong);
     charsOnlySong = "";
-    console.log(editedSongs);
+    // console.log(editedSongs);
 }
 
 // ADDING SONGS TO "MAIN CONTENT" DIV OF index.html
@@ -83,9 +83,19 @@ for (var i = 0; i < songs.length; i++) {
 }
 
 
+// Hide and show divs based on click
+var addMusicLink = document.getElementById("addMusic");
+addMusicLink.addEventListener('click', showAdd);
 
-
-
+function showAdd() {
+    if (addMusicView.style.display === "none") {
+            addMusicView.style.display = "block";
+            listMusicView.style.display = "none";
+    } else {
+        addMusicView.style.display = "none";
+        listMusicView.style.display = "block";
+    }
+}
 
 
 
