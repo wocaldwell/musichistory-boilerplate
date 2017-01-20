@@ -33,9 +33,9 @@ nav li:last-of-type {
     border-right: none;
 }
 
-li a:visited {
+.selected {
     color: black;
-    text-decoration: none; /* This aint working for some reason */
+    text-decoration: none;
 }
 
 /*************************************

@@ -89,12 +89,17 @@ addAllSongs();
 
 // Hide and show divs based on click
 var addMusicLink = document.getElementById("addMusic");
+var listMusicLink = document.getElementById("listMusic");
 addMusicLink.addEventListener('click', showAdd);
 
+
 function showAdd() {
+    console.log(addMusicLink);
     if (addMusicView.style.display === "none") {
             addMusicView.style.display = "block";
             listMusicView.style.display = "none";
+            addMusicLink.classList.add("selected"); // for link styling
+            listMusicLink.classList.remove("selected"); // for link styling
     } else {
         addMusicView.style.display = "none";
         listMusicView.style.display = "block";
@@ -104,7 +109,9 @@ function showAdd() {
 
 // Once the user fills out the song form and clicks the add button, you should collect all values from the input fields, add the song to your array of songs
 var addButton = document.getElementById("addButton");
-addButton.addEventListener('click', addSongToSongs);
+addButton.addEventListener('click', function() {
+    addSongToSongs();
+});
 
 function addSongToSongs() {
     var song = document.getElementById("addSongName").value;
@@ -114,6 +121,8 @@ function addSongToSongs() {
     songs.push(songToAdd);
     console.log(songs);
 }
+
+// add the class selected to nav links for correct syling
 
 
 
