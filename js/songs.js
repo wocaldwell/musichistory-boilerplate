@@ -1,3 +1,5 @@
+"use strict";
+
 var songs = [
 "Legs > by Z*ZTop on the album Eliminator",
 "The Logical Song > by Supertr@amp on the album Breakfast in America",
