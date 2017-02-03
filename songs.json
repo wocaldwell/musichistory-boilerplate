@@ -1,0 +1,44 @@
+[
+  {
+    "song": "AFK",
+    "artist":"Pinback",
+    "album":"Summer in Abaddon",
+    "genre":"Pop/Rock"
+  },
+  {
+    "song": "Legs",
+    "artist":"ZZTop",
+    "album":"Eliminator",
+    "genre":"Pop/Rock"
+  },
+  {
+    "song": "The Logical Song",
+    "artist":"Supertramp",
+    "album":"Breakfast in America",
+    "genre":"Pop/Rock"
+  },
+  {
+    "song": "Welcome to the Jungle",
+    "artist":"Guns N' Roses",
+    "album":"Appetite for Destruction",
+    "genre":"Pop/Rock"
+  },
+  {
+    "song": "Another Brick in the Wall",
+    "artist":"Pink Floyd",
+    "album":"The Wall",
+    "genre":"Pop/Rock"
+  },
+  {
+    "song": "Ironic",
+    "artist":"Alanis Morisette",
+    "album":"Jagged Little Pill",
+    "genre":"Pop/Rock"
+  },
+  {
+    "song": "Lonesome",
+    "artist":"Dr. Dog",
+    "album":"Be the Void",
+    "genre":"Pop/Rock"
+  }
+]
