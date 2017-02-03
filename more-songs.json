@@ -1,0 +1,44 @@
+[
+  {
+    "song": "Take 'Em Away",
+    "artist":"Old Crow Medicine Show",
+    "album":"O.C.M.S.",
+    "genre":"Folk, Country, Pop/Rock"
+  },
+  {
+    "song": "Penelope",
+    "artist":"Pinback",
+    "album":"Penelope CDS",
+    "genre":"Pop/Rock"
+  },
+  {
+    "song": "The Bizness (Featuring Common)",
+    "artist":"De La Soul",
+    "album":"The Best of De La Soul",
+    "genre":"Hip Hop"
+  },
+  {
+    "song": "Submission",
+    "artist":"Sex Pistols",
+    "album":"Nevermind the Bollocks, Here's the Sex Pistols",
+    "genre":"Pop/Rock"
+  },
+  {
+    "song": "Twig",
+    "artist":"Woven Hand",
+    "album":"Mosaic",
+    "genre":"Folk"
+  },
+  {
+    "song": "Sugar In Your Gas Tank",
+    "artist":"Less Than Jake",
+    "album":"Losing Streak",
+    "genre":"Rock/Ska"
+  },
+  {
+    "song": "The Headmaster's Ritual",
+    "artist":"The Smiths",
+    "album":"Meat Is Murder",
+    "genre":"Pop/Rock"
+  }
+]

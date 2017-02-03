@@ -11,7 +11,7 @@
         <nav>
             <ul>
                 <li><a href="index.html" id="listMusic" class="selected">List Music</a></li>
-                <li><a href="#" id="addMusic" onclick="showAdd()">Add Music</a></li>
+                <li><a href="#" id="addMusic"  >Add Music</a></li>
                 <!-- <li><a href="profile.html" style="text-decoration:none;">Profile</a></li> -->
             </ul>
         </nav>
@@ -60,10 +60,12 @@
             </ul><br>
             <div class="centered-input"><input type="submit" value="Filter" /></div>
         </form>
-        <section id="selections" onclick="SongList.removeSong()">
+        <section id="selections" >
         </section>
     </div>
     <script src="js/songs.js"></script>
-    <script src="js/song-remover.js"></script>
+    <script src="js/json-loader.js"></script>
+    <script src="js/button-clicker.js"></script>
+    <script src="js/event-handlers.js"></script>
 </body>
 </html>

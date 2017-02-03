@@ -89,7 +89,7 @@ nav li:last-of-type {
     margin-right: 2%;
     margin-bottom: 2%;
     padding: 2%;
-    height: 682px;
+/*    height: 682px; */
 }
 
 .full-width {
@@ -247,8 +247,13 @@ input, button {
   clear: both;
 }
 
+/*************************************
+ More Button
+*************************************/
 
-
+#more-button {
+  display: block;
+}
 
 
 
