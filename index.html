@@ -24,6 +24,8 @@
         <input type="text" id="addArtistName" /><br>
         <label for="addAlbumName">Album: </label>
         <input type="text" id="addAlbumName" /><br>
+        <label for="addGenreName">Genre: </label>
+        <input type="text" id="addGenreName" /><br>
         <button type="button" id="addButton">Add</button>
     </div>
     <div id="listMusicView" class="container clearfix">
@@ -32,7 +34,7 @@
             <div class="centered-input" class="padded"><input type="range" name="song-length" /></div><br>
             <div class="padded">
                 <label for="artists">Artist:</label><br>
-                <select class="full-width" name="artists">
+                <select id="artist-seletor" class="full-width" name="artists">
                     <option value="pinback">Pinback</option>
                     <option value="drdog">Dr. Dog</option>
                     <option value="midlake">Midlake</option>
