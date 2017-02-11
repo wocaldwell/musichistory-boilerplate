@@ -12,7 +12,6 @@ let loadSongs = function() {
             $.each(result, function(iterator) {
                 songs.push(result[iterator]);
             });
-            console.log('songs after ajax: ', songs);
             resolve(songs);
         }).fail(function(error) {
             reject(error);

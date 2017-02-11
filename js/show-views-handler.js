@@ -1,7 +1,8 @@
 "use strict";
 
 // link to json-loader.js
-let jsonLoader = require("./json-loader.js");
+let jsonLoader = require("./json-loader.js"),
+    formFilter = require("./form-filter.js");
 
 // variables to store songs arrays gotten from json-loader.js
 let songs = jsonLoader.getSongs(),
@@ -9,7 +10,6 @@ let songs = jsonLoader.getSongs(),
 
 // function that populates DOM with songs
 var populateSongs = function() {
-    console.log('populateSongs initiated');
     for (var i = 0; i < songs.length; i++) {
         var songsSong = songs[i];
         $("#selections").append(`<div class='song'>
@@ -21,8 +21,11 @@ var populateSongs = function() {
                                     </div>`);
     }
     $("#selections").append(`<button type="button" id="more-button" >More ></button>`);
-    // Clicking on more button shows more songs; listener
-    $("#more-button").click(populateMoreSongs);
+    // Clicking on more button shows more songs and appends selctors; listener
+    $("#more-button").click(function() {
+        populateMoreSongs();
+        formFilter.fillMoreSelectors();
+    });
     // Clicking on remove button removes song; listener and function
     $(".remove-button").click(function(){
         $(this).closest("div").remove();
@@ -43,8 +46,10 @@ var populateMoreSongs = function() {
                                     </div>`);
     }
     $("#selections").append(`<button type="button" id="more-button" >More ></button>`);
-    // Clicking on more button shows more songs; listener
-    $("#more-button").click(populateMoreSongs);
+    // Clicking on more button shows alert; listener
+    $("#more-button").click(function() {
+        alert("No more songs in the database!");
+    });
     // Clicking on remove button removes song; listener and function
     $(".remove-button").click(function(){
         $(this).closest("div").remove();
@@ -53,9 +58,11 @@ var populateMoreSongs = function() {
 
 // load the songs and then populate the page
 jsonLoader.loadSongs()
-.then(populateSongs);
+.then(populateSongs)
+.then(formFilter.fillSelectors);
 // load more songs
 jsonLoader.loadMoreSongs();
+// .then(formFilter.fillSelectors);
 
 // function that shows "Add Music" view
 function showAdd() {

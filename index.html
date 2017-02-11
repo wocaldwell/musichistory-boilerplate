@@ -35,21 +35,13 @@
             <div class="padded">
                 <label for="artists">Artist:</label><br>
                 <select id="artist-seletor" class="full-width" name="artists">
-                    <option value="pinback">Pinback</option>
-                    <option value="drdog">Dr. Dog</option>
-                    <option value="midlake">Midlake</option>
-                    <option value="damienjurado">Damien Jurado</option>
-                    <option value="bobdylan">Bob Dylan</option>
+                    <option value="all-artists">All Artists</option>
                 </select>
             </div><br>
             <div class="padded">
                 <label for="albums">Album:</label><br>
-                <select class="full-width" name="albums">
-                    <option value="proceed">Proceed to Memory</option>
-                    <option value="b-room">B-Room</option>
-                    <option value="roscoe">Roscoe</option>
-                    <option value="visions">Visions of Us on the Land</option>
-                    <option value="newmorning">New Morning</option>
+                <select id="album-selector" class="full-width" name="albums">
+                    <option value="all-albums">All Albums</option>
                 </select>
             </div><br>
             <ul id="genre-check">
@@ -61,7 +53,7 @@
                 <li><input type="checkbox" name="genre" value="blues",/>Blues</li>
                 <li><input type="checkbox" name="genre" value="hiphop" />Hip hop</li>
             </ul><br>
-            <div class="centered-input"><input type="submit" value="Filter" /></div>
+            <div class="centered-input"><button type="button" id="filter-button">Filter</div>
         </form>
         <section id="selections" ></section>
     </div>
