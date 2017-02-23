@@ -1,0 +1,166 @@
+/*************************************
+ General
+*************************************/
+
+* {
+    font-family: 'Raleway', 'Nunito Sans', sans-serif;
+    max-width: 1150px;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    background-color: #262626
+}
+
+.btn {
+  background-color: #EC8A34;
+  clear: both;
+  width: 100%;
+  border-radius: 0;
+  border-color: #EC8A34;
+}
+
+/*************************************
+ Navigation Header
+*************************************/
+
+nav {
+  margin-top: 2%;
+}
+
+#navigation-container {
+  background-color: #FFB4B0;
+
+}
+
+.navbar-default,
+.navbar-collapse,
+.navbar-default,
+.navbar-form {
+  border-color: #FFB4B0;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #e7e7e7;
+  background-color: #EC8A34;
+}
+
+/*************************************
+ Selector Form
+*************************************/
+
+#selector-wrapper {
+  padding-left: 0;
+}
+
+#selector {
+    background-color: #4DD7FA;
+    border: 3px solid #4DD7FA;
+}
+
+#filters-wrapper {
+  margin: 5%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+#genre-check {
+    padding-left: 0;
+}
+
+#genre-check li {
+    border: 1px transparent solid;
+    display: inline-block;
+    width: 6em;
+}
+
+.centered-input {
+    text-align: center;
+    width: 100%;
+}
+
+.padded {
+    padding: 2% 0;
+}
+
+
+
+/*************************************
+ Song Name Section
+*************************************/
+
+#selections-wrapper {
+  padding-right: 0;
+}
+
+#selections {
+    background-color: #FEFAC0;
+    border: 3px solid #FEFAC0;
+}
+
+#selections h2 {
+    font-weight: bolder;
+    color: #785616;
+}
+
+#selections p {
+    display: inline-block;
+    border-right: 2px solid #EC8A34;
+    padding: 0 1%;
+    margin: -1em 0;
+}
+
+
+#selections p:last-of-type {
+    border-right: none;
+}
+
+.song {
+    margin: -1em 0;
+    padding: 3%;
+}
+
+.song:last-of-type {
+    margin: 0;
+}
+
+/*************************************
+ Add Music View
+*************************************/
+
+#addMusicView {
+  color: #a7a7a7;
+  display: none;  /* Default on page load */
+  /*text-align: center;*/
+  width: 30%;
+  margin: auto;
+}
+
+#addMusicView .row {
+  margin: 5% 0;
+}
+
+#addMusicView label {
+  float: left;
+}
+
+#addMusicView input {
+  float: right;
+}
+
+#addMusicView button {
+  // background-color: #EC8A34;
+  // clear: both;
+  // width: 100%
+}
+
+
+
+
+

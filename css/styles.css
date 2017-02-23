@@ -1,259 +1,123 @@
 /*************************************
  General
 *************************************/
-
 * {
-    font-family: 'Raleway', 'Nunito Sans', sans-serif;
-    max-width: 1150px;
-}
+  font-family: 'Raleway', 'Nunito Sans', sans-serif;
+  max-width: 1150px; }
 
 body {
-    width: 90%;
-    margin: auto;
-}
+  width: 90%;
+  margin: auto;
+  background-color: #262626; }
+
+.btn {
+  background-color: #EC8A34;
+  clear: both;
+  width: 100%;
+  border-radius: 0;
+  border-color: #EC8A34; }
 
 /*************************************
  Navigation Header
 *************************************/
+nav {
+  margin-top: 2%; }
 
-header {
-    background-color: #FFB4B0;
-    border: 3px solid black;
-    margin: 2% 0;
-}
+#navigation-container {
+  background-color: #FFB4B0; }
 
-nav li {
-    display: inline-block;
-    padding-right: 1%;
-    border-right: 3px solid black;
+.navbar-default,
+.navbar-collapse,
+.navbar-default,
+.navbar-form {
+  border-color: #FFB4B0;
+  border-radius: 0; }
 
-}
-
-nav li:last-of-type {
-    border-right: none;
-}
-
-.selected {
-    color: black;
-    text-decoration: none;
-}
-
-/*************************************
- Column Height
-*************************************/
-
-/*.container {
-    padding-right: 330px;
-    overflow: hidden;
-}
-
-#selector {
-  float: left;
-  width: 100%;
-}
-
-#selections {
-  float: right;
-  margin-right: -330px;
-  width: 300px;
-}
-
-#selector,
-#selections {
-  padding-bottom: 100px;
-}
-
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-
-.clearfix {
-  display: inline-block;
-}*/
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #e7e7e7;
+  background-color: #EC8A34; }
 
 /*************************************
  Selector Form
 *************************************/
+#selector-wrapper {
+  padding-left: 0; }
 
 #selector {
-    float: left;
-    display: inline-block;
-    width: 21%;
-    background-color: #4DD7FA;
-    border: 3px solid black;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    padding: 2%;
-/*    height: 682px; */
-}
+  background-color: #4DD7FA;
+  border: 3px solid #4DD7FA; }
+
+#filters-wrapper {
+  margin: 5%; }
 
 .full-width {
-    width: 100%;
-}
+  width: 100%; }
 
 #genre-check {
-    padding-left: 0;
-}
+  padding-left: 0; }
 
 #genre-check li {
-    border: 1px transparent solid;
-    display: inline-block;
-    width: 6em;
-}
+  border: 1px transparent solid;
+  display: inline-block;
+  width: 6em; }
 
 .centered-input {
-    text-align: center;
-    width: 100%;
-}
+  text-align: center;
+  width: 100%; }
 
 .padded {
-    padding: 2% 0;
-}
-
-/*************************************
- Customized Song Length Slider
-*************************************/
-
-/***************** Hiding the default slider ***************/
-
-input[type=range] {
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-  width: 100%; /* Specific width is required for Firefox. */
-  background: transparent; /* Otherwise white in Chrome */
-}
-
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-}
-
-input[type=range]:focus {
-  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
-}
-
-
-/************* Styling for slider begins here **************/
-
-/* Special styling for WebKit/Blink */
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: 1px solid #000;
-  height: 20px;
-  width: 20px;
-  border-radius: 100%;
-  background: #F6F6F6;
-  cursor: pointer;
-  margin-top: -7px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-}
-
-/* All the same stuff for Firefox */
-input[type=range]::-moz-range-thumb {
-  border: 1px solid #000000;
-  height: 20px;
-  width: 20px;
-  border-radius: 100%;
-  background: #F6F6F6;
-  cursor: pointer;
-}
-
-/************* Styling for track begins here **************/
-
-
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 6px;
-  cursor: pointer;
-  background: #F6F6F6;
-  border-radius: 3px;
-  border: 0.2px solid #000;
-}
-
-/* All the same stuff for Firefox */
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 6px;
-  cursor: pointer;
-  background: #F6F6F6;
-  border-radius: 3;
-  border: 0.2px solid #000;
-}
+  padding: 2% 0; }
 
 /*************************************
  Song Name Section
 *************************************/
+#selections-wrapper {
+  padding-right: 0; }
 
 #selections {
-    float: right;
-    display: inline-block;
-    width: 71%;
-    background-color: #FEFAC0;
-    border: 3px solid black;
-}
+  background-color: #FEFAC0;
+  border: 3px solid #FEFAC0; }
 
 #selections h2 {
-    font-weight: bolder;
-    color: #785616;
-}
+  font-weight: bolder;
+  color: #785616; }
 
 #selections p {
-    display: inline-block;
-    border-right: 2px solid black;
-    padding: 0 1%;
-    margin: -1em 0;
-}
-
+  display: inline-block;
+  border-right: 2px solid #EC8A34;
+  padding: 0 1%;
+  margin: -1em 0; }
 
 #selections p:last-of-type {
-    border-right: none;
-}
+  border-right: none; }
 
 .song {
-    margin: -1em 0;
-    padding: 3%;
-}
+  margin: -1em 0;
+  padding: 3%; }
 
 .song:last-of-type {
-    margin: 0;
-}
+  margin: 0; }
 
 /*************************************
  Add Music View
 *************************************/
-
 #addMusicView {
-  display: none;  /* Default on page load */
+  color: #a7a7a7;
+  display: none;
+  /* Default on page load */
   /*text-align: center;*/
   width: 30%;
-  margin: auto;
-}
+  margin: auto; }
 
-#addMusicView label,
-input, button {
-}
+#addMusicView .row {
+  margin: 5% 0; }
 
 #addMusicView label {
-  float: left;
-}
+  float: left; }
 
 #addMusicView input {
-  float: right;
-}
+  float: right; }
 
-#addMusicView button {
-  clear: both;
-}
-
-/*************************************
- More Button
-*************************************/
-
-#more-button {
-  display: block;
-}
-
-
-
+/*# sourceMappingURL=styles.css.map */

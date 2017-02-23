@@ -7,7 +7,7 @@ let showViews = require("./show-views-handler.js"),
 // Hide and show divs based on clicking "Add Music"; listener
 $("#addMusic").click(showViews.showAdd);
 
-// Hide and show divs based on clicking "Add Music"; listener
+// Hide and show divs based on clicking "List Music"; listener
 $("#listMusic").click(showViews.showList);
 
 // Add new song to your array of songs and DOM; listener

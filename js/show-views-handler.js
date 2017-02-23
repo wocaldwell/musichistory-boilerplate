@@ -67,8 +67,8 @@ jsonLoader.loadMoreSongs();
 // function that shows "Add Music" view
 function showAdd() {
     console.log('you clicked Add Music');
-    $("#addMusic").addClass("selected");
-    $("#listMusic").removeClass("selected");
+    $("#addMusicLI").addClass("active");
+    $("#listMusicLI").removeClass("active");
     $("#addMusicView").show();
     $("#listMusicView").hide();
 }
@@ -76,8 +76,8 @@ function showAdd() {
 // function that shows "List Music" view
 function showList() {
     console.log('you clicked List Music');
-    $("#addMusic").removeClass("selected");
-    $("#listMusic").addClass("selected");
+    $("#addMusicLI").removeClass("active");
+    $("#listMusicLI").addClass("active");
     $("#addMusicView").hide();
     $("#listMusicView").show();
 }

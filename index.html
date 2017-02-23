@@ -1,66 +1,98 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Raleway" rel="stylesheet">
-  <script type="text/javascript" src="/dist/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#" id="listMusic" class="selected">List Music</a></li>
-                <li><a href="#" id="addMusic" >Add Music</a></li>
-                <!-- <li><a href="profile.html" style="text-decoration:none;">Profile</a></li> -->
-            </ul>
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Raleway" rel="stylesheet">
+        <script type="text/javascript" src="/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div id="navigation-container" class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">MusicHistory <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li id="listMusicLI" class="active"><a href="#" id="listMusic" >List Music</a></li>
+                        <li id="addMusicLI" ><a href="#" id="addMusic" >Add Music</a></li>
+                        <!-- <li><a href="profile.html" style="text-decoration:none;">Profile</a></li> -->
+                    </ul>
+                </div> <!-- /.navbar-collapse -->
+            </div> <!-- /.container-fluid -->
         </nav>
-    </header>
-    <div id="addMusicView">
-        <label for="addSongName">Song Title: </label>
-        <input type="text" id="addSongName" /><br>
-        <label for="addArtistName">Artist: </label>
-        <input type="text" id="addArtistName" /><br>
-        <label for="addAlbumName">Album: </label>
-        <input type="text" id="addAlbumName" /><br>
-        <label for="addGenreName">Genre: </label>
-        <input type="text" id="addGenreName" /><br>
-        <button type="button" id="addButton">Add</button>
-    </div>
-    <div id="listMusicView" class="container clearfix">
-        <form id="selector">
-            <label for="song-length">Song Length:</label><br>
-            <div class="centered-input" class="padded"><input type="range" name="song-length" /></div><br>
-            <div class="padded">
-                <label for="artists">Artist:</label><br>
-                <select id="artist-seletor" class="full-width" name="artists">
-                    <option value="all-artists">All Artists</option>
-                </select>
-            </div><br>
-            <div class="padded">
-                <label for="albums">Album:</label><br>
-                <select id="album-selector" class="full-width" name="albums">
-                    <option value="all-albums">All Albums</option>
-                </select>
-            </div><br>
-            <ul id="genre-check">
-                <li><label for="genre-check">Genre:</label></li><br>
-                <li><input type="checkbox" name="genre" value="rock" />Rock</li>
-                <li><input type="checkbox" name="genre" value="Classical">Classical</li><br>
-                <li><input type="checkbox" name="genre" value="pop" />Pop</li>
-                <li><input type="checkbox" name="genre" value="jazz" />Jazz</li><br>
-                <li><input type="checkbox" name="genre" value="blues",/>Blues</li>
-                <li><input type="checkbox" name="genre" value="hiphop" />Hip hop</li>
-            </ul><br>
-            <div class="centered-input"><button type="button" id="filter-button">Filter</div>
-        </form>
-        <section id="selections" ></section>
-    </div>
-    <script type="text/javascript" src="dist/app.js"></script>
-    <!-- <script src="js/json-loader.js"></script>
-    <script src="js/songs.js"></script>
-    <script src="js/button-clicker.js"></script>
-    <scr ipt src="js/event-handlers.js"></script> -->
-</body>
+        <div id="addMusicView" class"container-fluid">
+            <div class="row">
+                <div>
+                    <label for="addSongName">Song Title: </label>
+                    <input type="text" id="addSongName" /><br>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label for="addArtistName">Artist: </label>
+                    <input type="text" id="addArtistName" /><br>
+                </div>
+            </div>
+            <div class="row">
+                <label for="addAlbumName">Album: </label>
+                <input type="text" id="addAlbumName" /><br>
+            </div>
+            <div class="row">
+                <label for="addGenreName">Genre: </label>
+                <input type="text" id="addGenreName" /><br>
+            </div>
+            <div class="row">
+                <button type="button" id="addButton" class="btn btn-default" >Add Song </button>
+            </div>
+        </div> <!-- /#addMusicView -->
+        <div id="listMusicView" class="container-flex">
+            <div id="selector-wrapper" class="col-xs-4">
+                <form id="selector">
+                    <div id="filters-wrapper">
+                        <label for="song-length">Song Length:</label><br>
+                        <div class="centered-input" class="padded"><input type="range" name="song-length" /></div><br>
+                        <div class="padded">
+                            <label for="artists">Artist:</label><br>
+                            <select id="artist-seletor" class="full-width" name="artists">
+                                <option value="all-artists">All Artists</option>
+                            </select>
+                        </div><br>
+                        <div class="padded">
+                            <label for="albums">Album:</label><br>
+                            <select id="album-selector" class="full-width" name="albums">
+                                <option value="all-albums">All Albums</option>
+                            </select>
+                        </div><br>
+                        <ul id="genre-check">
+                            <li><label for="genre-check">Genre:</label></li><br>
+                            <li><input type="checkbox" name="genre" value="rock" />Rock</li>
+                            <li><input type="checkbox" name="genre" value="Classical">Classical</li><br>
+                            <li><input type="checkbox" name="genre" value="pop" />Pop</li>
+                            <li><input type="checkbox" name="genre" value="jazz" />Jazz</li><br>
+                            <li><input type="checkbox" name="genre" value="blues",/>Blues</li>
+                            <li><input type="checkbox" name="genre" value="hiphop" />Hip hop</li>
+                        </ul><br>
+                        <div class="centered-input"><button type="button" id="filter-button" class="btn btn-default">Filter</div>
+                    </div>
+                </form>
+            </div> <!-- Filter Form /.container -->
+            <div id="selections-wrapper" class="col-xs-8">
+                <section id="selections" ></section>
+            </div>
+        </div> <!-- List Music View /.container -->
+        <script type="text/javascript" src="dist/app.js"></script>
+        <!-- <script src="js/json-loader.js"></script>
+        <script src="js/songs.js"></script>
+        <script src="js/button-clicker.js"></script>
+        <scr ipt src="js/event-handlers.js"></script> -->
+    </body>
 </html>

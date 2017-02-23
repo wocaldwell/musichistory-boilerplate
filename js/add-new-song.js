@@ -20,7 +20,7 @@ function addSongToSongs() {
                                 <p>${songToAdd.artist}</p>
                                 <p>${songToAdd.album}</p>
                                 <p>${songToAdd.genre}</p>
-                                <button type="button" class="remove-button">Remove</button>
+                                <button type="button" class="btn btn-default remove-button">Remove</button>
                             </div>`);
     // Clicking on remove button removes song; listener and function
     $(".remove-button").click(function(){

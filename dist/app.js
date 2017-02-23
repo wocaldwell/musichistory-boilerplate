@@ -21,7 +21,7 @@ function addSongToSongs() {
                                 <p>${songToAdd.artist}</p>
                                 <p>${songToAdd.album}</p>
                                 <p>${songToAdd.genre}</p>
-                                <button type="button" class="remove-button">Remove</button>
+                                <button type="button" class="btn btn-default remove-button">Remove</button>
                             </div>`);
     // Clicking on remove button removes song; listener and function
     $(".remove-button").click(function(){
@@ -242,8 +242,8 @@ jsonLoader.loadMoreSongs();
 // function that shows "Add Music" view
 function showAdd() {
     console.log('you clicked Add Music');
-    $("#addMusic").addClass("selected");
-    $("#listMusic").removeClass("selected");
+    $("#addMusicLI").addClass("active");
+    $("#listMusicLI").removeClass("active");
     $("#addMusicView").show();
     $("#listMusicView").hide();
 }
@@ -251,8 +251,8 @@ function showAdd() {
 // function that shows "List Music" view
 function showList() {
     console.log('you clicked List Music');
-    $("#addMusic").removeClass("selected");
-    $("#listMusic").addClass("selected");
+    $("#addMusicLI").removeClass("active");
+    $("#listMusicLI").addClass("active");
     $("#addMusicView").hide();
     $("#listMusicView").show();
 }
@@ -268,7 +268,7 @@ let showViews = require("./show-views-handler.js"),
 // Hide and show divs based on clicking "Add Music"; listener
 $("#addMusic").click(showViews.showAdd);
 
-// Hide and show divs based on clicking "Add Music"; listener
+// Hide and show divs based on clicking "List Music"; listener
 $("#listMusic").click(showViews.showList);
 
 // Add new song to your array of songs and DOM; listener

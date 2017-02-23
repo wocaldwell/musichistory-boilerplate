@@ -1,31 +1,31 @@
-# Music History Part 6
+# Music History 7
 
 ## Setup
 
-These commands are a helpful quick start. You may choose to ignore them completely and create your own directory structure. If you choose to use this recommendation, just copy the commands below and paste. It doesn't matter what directory you are currently in.
+### Create a new branch
 
-```bash
-cd ~/workspace/musichistory
-git checkout -b version-6
+`git checkout -b version7`
+
+### Update your .gitignore file for SASS
+
+Add the following line to .gitignore
+
+```
+.sass-cache
 ```
 
-## Instructions
+## Requirements
 
-Now is the time to make Music History a fully functional, single page, modular, asychronous, application.
+## Using SASS
 
-### Modular with Browserify
+All your current CSS should be converted into SASS, and you must use SASS from this point forward.
 
-1. Using Browerify, you should create several modules for the application.
-1. One module is responsible for loading songs from a JSON file and storing them in an array. This module should expose one method for getting the entire list of songs, and one method for adding a song to the array.
-1. One module is responsible for making the filtering form work. Therefore, it will need to use methods from the previous module.
-1. One module is responsible for showing the two views of the app (song list and song form).
+## Using Automation
 
-### Filtering
+As you are working, ensure that your Gulp/Grunt task is running at all times so that your JavaScript code is automatically checked as you're writing it, and your SASS is compiled into CSS.
 
-1. When the user selects an artist, only songs from that artist should appear.
-1. When the user selects an album, only songs from that album should appear.
+> **Note:** After you run your Gulp/Grunt task, if you add more JavaScript files, you need to restart grunt so that it recognizes the new file you added.
 
-### Adding Songs
+## Using Bootstrap
 
-1. The new music form should have a field for every key on a song object. We started with just Artist, Album, and Title, but you can add more if you wish.
-1. The music form should be fully functional. When you click the *Save Song* button, a new object should be added to the array of songs. The DOM should also be immediately updated with the new song added.
+You need to have your application refactored to use the Bootstrap grid system for layout. From this point on, styling of your application is completely up to you, but you must be using Bootstrap grid system for layouts.
