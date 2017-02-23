@@ -17,10 +17,10 @@ var populateSongs = function() {
                                         <p>${songsSong.artist}</p>
                                         <p>${songsSong.album}</p>
                                         <p>${songsSong.genre}</p>
-                                        <button type="button" class="remove-button">Remove</button>
+                                        <button type="button" class="btn btn-default remove-button">Remove</button>
                                     </div>`);
     }
-    $("#selections").append(`<button type="button" id="more-button" >More ></button>`);
+    $("#selections").append(`<button type="button" id="more-button" class="btn btn-default">More ></button>`);
     // Clicking on more button shows more songs and appends selctors; listener
     $("#more-button").click(function() {
         populateMoreSongs();
@@ -42,10 +42,10 @@ var populateMoreSongs = function() {
                                         <p>${songsSong.artist}</p>
                                         <p>${songsSong.album}</p>
                                         <p>${songsSong.genre}</p>
-                                        <button type="button" class="remove-button">Remove</button>
+                                        <button type="button" class="btn btn-default remove-button">Remove</button>
                                     </div>`);
     }
-    $("#selections").append(`<button type="button" id="more-button" >More ></button>`);
+    $("#selections").append(`<button type="button" id="more-button" class="btn btn-default">More ></button>`);
     // Clicking on more button shows alert; listener
     $("#more-button").click(function() {
         alert("No more songs in the database!");
